@@ -37,7 +37,7 @@ WEBUI_VERSION = os.environ.get("WEBUI_VERSION", "v1.0.0-alpha.21")
 ####################################
 
 
-WEBUI_AUTH = True if os.environ.get("WEBUI_AUTH", "FALSE") == "TRUE" else False
+WEBUI_AUTH = os.environ.get("WEBUI_AUTH", "FALSE") == "TRUE"
 
 
 ####################################
